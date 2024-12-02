@@ -6,18 +6,14 @@
     <title>Reajuste de Saldo</title>
     <script>
         function calcularReajuste() {
-            // Obter o saldo inserido pelo usuário
             var saldo = parseFloat(document.getElementById("saldo").value);
 
-            // Verificar se o saldo é um número válido
             if (isNaN(saldo) || saldo <= 0) {
                 alert("Por favor, insira um saldo válido.");
             } else {
-                // Calcular o reajuste de 1%
                 var reajuste = saldo * 0.01;
                 var saldoComReajuste = saldo + reajuste;
 
-                // Exibir o saldo com reajuste
                 alert("Saldo com reajuste de 1%: R$ " + saldoComReajuste.toFixed(2));
             }
         }
