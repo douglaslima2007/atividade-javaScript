@@ -8,7 +8,7 @@
         function calcularReajuste() {
             var valorProduto = parseFloat(document.getElementById("valorProduto").value);
 
-            var reajuste = valorProduto * 0.3333; // 33,33% do valor
+            var reajuste = valorProduto * 0.3333; 
             var valorCorrigido = valorProduto + reajuste; // Valor final com o reajuste
 
             document.getElementById("resultado").innerHTML = "Valor original: R$ " + valorProduto.toFixed(2) + "<br>" +
