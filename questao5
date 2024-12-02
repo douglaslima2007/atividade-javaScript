@@ -6,14 +6,11 @@
     <title>Reajuste de Produto</title>
     <script>
         function calcularReajuste() {
-            // Obtém o valor do produto inserido pelo usuário
             var valorProduto = parseFloat(document.getElementById("valorProduto").value);
 
-            // Calcula o valor do reajuste de 33,33%
             var reajuste = valorProduto * 0.3333; // 33,33% do valor
             var valorCorrigido = valorProduto + reajuste; // Valor final com o reajuste
 
-            // Exibe o valor corrigido
             document.getElementById("resultado").innerHTML = "Valor original: R$ " + valorProduto.toFixed(2) + "<br>" +
                                                                 "Reajuste de 33,33%: R$ " + reajuste.toFixed(2) + "<br>" +
                                                                 "Valor corrigido: R$ " + valorCorrigido.toFixed(2);
